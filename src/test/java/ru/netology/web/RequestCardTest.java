@@ -100,7 +100,7 @@ public class RequestCardTest {
         dateElement.doubleClick();
         dateElement.sendKeys(BACK_SPACE);
 
-        String date = service.getPastDate(180, "dd.MM.yyyy");
+        String date = service.getDate(-180, "dd.MM.yyyy");
 
         dateElement.setValue(date);
 
